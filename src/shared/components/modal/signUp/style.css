@@ -1,0 +1,43 @@
+.signUp-heading {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Josefin Sans", sans-serif;
+  margin-top: 20px;
+}
+.signup-login-form {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 50px;
+  margin-top: 60px;
+}
+
+.signup-button {
+  width: 30%;
+  background-color: #0c8ed3;
+  border: 0px;
+  padding: 9px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer !important;
+  margin-bottom: 50px !important;
+}
+.signup-heading {
+  font-size: 20px;
+  margin-bottom: 0;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+}
+.dobStyle {
+  max-width: 40%;
+}
+
+@media (max-width: 576px) {
+  .signup-login-form {
+    padding: 0px !important;
+  }
+}
