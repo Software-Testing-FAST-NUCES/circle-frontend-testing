@@ -1,4 +1,4 @@
-describe("Login Test", function () {
+describe("Signup Test", function () {
   // test() and specify() is also available
 
   it("demo test1", function (browser) {
@@ -10,8 +10,8 @@ describe("Login Test", function () {
       // .assert.title("Google")
       // .assert.visible("@searchBar")
       // .setValue("@searchBar", "nightwatch")
-      .click("@loginBtn")
-      .waitForElementVisible("@loginModal", 3000)
+      .click("@signupBtn")
+      //.waitForElementVisible("@loginModal", 3000)
       .pause(3000);
 
     browser.end();

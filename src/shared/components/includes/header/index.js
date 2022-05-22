@@ -21,6 +21,7 @@ import Request from "../../modal/requests";
 export default function Header() {
   const history = useHistory();
   const [offCanvas, setOffCanvas] = useState(false);
+  const [pending, setPending] = useState([]);
 
   const signOutPressHandler = () => {
     confirmAlert({
@@ -40,6 +41,22 @@ export default function Header() {
       ],
     });
   };
+  const getPendingRequests = () => {
+    axios
+      .get(`friends/pending`, {
+        headers: {
+          "x-auth-token": user.token,
+        },
+      })
+      .then((res) => {
+        if (res.statusText === "OK") {
+          setPending(res.data);
+        }
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
   const [isOpen, setOpen] = useState(false);
   const [isOpen1, setOpen1] = useState(false);
   const [isOpen2, setOpen2] = useState(false);
@@ -47,7 +64,11 @@ export default function Header() {
   const closeModal = () => setOpen(false);
   const openModal1 = () => setOpen1(true);
   const closeModal1 = () => setOpen1(false);
-  const openModal2 = () => setOpen2(true);
+  const openModal2 = () => {
+    setOpen2(true);
+    getPendingRequests();
+  };
+
   const closeModal2 = () => setOpen2(false);
   const openSideNav = () => setOffCanvas(true);
   const closeSideNav = () => setOffCanvas(false);

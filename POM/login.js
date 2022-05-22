@@ -4,6 +4,9 @@ module.exports = {
     loginBtn: {
       selector: "a[id=login-btn]",
     },
+    signupBtn: {
+      selector: "a[id=signup-btn]",
+    },
     loginModal: {
       selector: "div[class=login-modal-body]",
     },
