@@ -2,13 +2,11 @@ import { configureStore } from "@reduxjs/toolkit";
 import { combineReducers } from "redux";
 import { persistStore, persistReducer } from "redux-persist";
 import storage from "redux-persist/lib/storage";
-import { applyMiddleware } from "redux";
-import { composeWithDevTools } from "redux-devtools-extension";
 import user from "./reducers/userSlice.js";
-import Loader from "./reducers/LoaderSlice";
+import logger from "redux-logger";
+import thunk from "redux-thunk";
 const rootReducer = combineReducers({
   user: user,
-  loader: Loader,
 });
 const persistConfig = {
   key: "root",
@@ -20,7 +18,7 @@ const store = configureStore({
   reducer: {
     root: persistedReducer,
   },
-  //  composeWithDevTools()
+  middleware: [thunk, logger],
 });
 
 const persistor = persistStore(store);

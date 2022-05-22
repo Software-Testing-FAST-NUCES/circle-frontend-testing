@@ -54,7 +54,7 @@ export default function Header() {
 
   const dispatch = useDispatch();
   const user = useSelector((state) => state.root.user);
-  const name = user.user.firstname;
+  const name = user.user?.firstname;
 
   const navigate = (id) => {
     console.log(user.user.id);
@@ -113,6 +113,7 @@ export default function Header() {
                     className="custom-site-btn text-font-family"
                     onClick={openModal1}
                     role="button"
+                    id="signup-btn"
                   >
                     Create Account
                   </a>
@@ -120,6 +121,7 @@ export default function Header() {
                     className="custom-site-btn custom-site-btn2 text-font-family"
                     onClick={openModal}
                     role="button"
+                    id="login-btn"
                   >
                     Login
                   </a>

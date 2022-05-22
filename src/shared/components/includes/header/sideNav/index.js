@@ -9,19 +9,19 @@ const SideNav = ({ offCanvas, closeSideNav, user }) => {
   return (
     <>
       <div
-        class={`offcanvas-backdrop ${offCanvas ? "show" : "fade"}`}
+        className={`offcanvas-backdrop ${offCanvas ? "show" : "fade"}`}
         onClick={closeSideNav}
       />
       <div
         role="dialog"
         aria-modal="true"
-        class={`offcanvas offcanvas-end ${offCanvas && "show"}`}
-        tabindex="-1"
+        className={`offcanvas offcanvas-end ${offCanvas && "show"}`}
+        tabIndex="-1"
         id="offcanvasNavbar"
         aria-labelledby="offcanvasNavbarLabel"
       >
-        <div class="offcanvas-header">
-          <div class="offcanvas-title" id="offcanvasNavbarLabel">
+        <div className="offcanvas-header">
+          <div className="offcanvas-title" id="offcanvasNavbarLabel">
             <Link to="/" onClick={closeSideNav}>
               <h2>Circle</h2>
             </Link>
@@ -30,8 +30,8 @@ const SideNav = ({ offCanvas, closeSideNav, user }) => {
             <FontAwesomeIcon icon={faTimes} />
           </i>
         </div>
-        <div class="offcanvas-body">
-          <div class="justify-content-end flex-grow-1 pe-3 navbar-nav">
+        <div className="offcanvas-body">
+          <div className="justify-content-end flex-grow-1 pe-3 navbar-nav">
             <ul>
               <li>
                 <Link to="/" onClick={closeSideNav}>
