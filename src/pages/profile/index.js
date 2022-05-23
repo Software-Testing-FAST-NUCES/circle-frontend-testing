@@ -111,10 +111,11 @@ function Profile(props) {
       });
   };
   const sendRequest = () => {
+    console.log(user?.token);
     axios
       .get(`friends/request/${props.match.params.id}`, {
         headers: {
-          "x-auth-token": user.token,
+          "x-auth-token": user?.token,
         },
       })
       .then((res) => {
