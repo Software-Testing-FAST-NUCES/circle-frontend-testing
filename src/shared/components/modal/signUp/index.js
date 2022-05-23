@@ -64,14 +64,14 @@ function SignupModal({ openModal, HideModal }) {
             <Row>
               <Col>
                 <Form.Control
-                  placeholder="First name"
+                  placeholder="Firstname"
                   onChange={(e) => setFirstname(e.target.value)}
                   className="text-font-family"
                 />
               </Col>
               <Col>
                 <Form.Control
-                  placeholder="Last name"
+                  placeholder="Lastname"
                   onChange={(e) => setLastname(e.target.value)}
                   className="text-font-family"
                 />

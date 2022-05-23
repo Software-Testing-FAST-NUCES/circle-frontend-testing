@@ -6,23 +6,89 @@ const page = {
     passwordField: "input[id=formBasicPassword]",
     letsGoBtn: "button.connect-login-btn",
     logoutBtn: "button.custom-site-btn3.text-font-family",
+    yesLogout: ".react-confirm-alert-button-group > button:first-child",
     editProfileBtn: "a.btn.btn-outline-dark.btn-sm.btn-block.text-font-family",
+    updateProfileModal: ".modal-body.modal-body-flex",
+    updateBtn: "button.signup-button.mt-3",
+    editProfileName1Field: "input[placeholder=Firstname]",
+    editProfileName2Field: "input[placeholder=Lastname]",
+    editProfileEmailField: "input[placeholder=Email]",
+    editProfileBioField: "form textarea.form-control",
+    mainNameTag: "h4.mt-0.mb-4.text-font-family",
+    bioArea: "p.font-italic.mb-0.text-font-family ",
   },
   commands: {
     // because we need basic login for update profile testing
     validLogin: function (email, password) {
       return this.waitForElementVisible("body", 3000)
         .click("@loginBtn")
-        .pause(1000)
+        .waitForElementVisible("@emailField", 4000)
         .setValue("@emailField", email)
         .setValue("@passwordField", password)
         .click("@letsGoBtn")
-        .pause(3000)
+        .waitForElementVisible("@logoutBtn", 4000)
         .assert.visible("@logoutBtn", "Login Successful !");
       // .end();
     },
+    endCommand: function () {
+      return this.end();
+    },
     openEditProfileModal: function () {
-      return this.click("@editProfileBtn").pause(1000).end();
+      return this.click("@editProfileBtn")
+        .pause(1000)
+        .assert.visible(
+          "@updateProfileModal",
+          "Update Profile modal has successfuly opened"
+        );
+    },
+    saveProfileWithouChanging: function (browser) {
+      return this.getValue(
+        "input[placeholder=Firstname]",
+        function (result, updatebtn = "@updateBtn", mainText = "@mainNameTag") {
+          console.log("THISSS", result.value);
+          return browser
+            .click(updatebtn)
+            .waitForElementVisible("h4.mt-0.mb-4.text-font-family", 4000)
+            .assert.textContains("h4.mt-0.mb-4.text-font-family", result.value);
+        }
+      );
+    },
+    updateFirstName: function (newFirstName) {
+      return this.setValue("@editProfileName1Field", newFirstName)
+        .click("@updateBtn")
+        .waitForElementVisible("@mainNameTag", 4000)
+        .assert.textContains(
+          "@mainNameTag",
+          newFirstName,
+          "First Name Successfully Changed"
+        );
+    },
+    updateSecondName: function (newSecondName) {
+      return this.setValue("@editProfileName2Field", newSecondName)
+        .click("@updateBtn")
+        .waitForElementVisible("@mainNameTag", 4000)
+        .assert.textContains(
+          "@mainNameTag",
+          newSecondName,
+          "Second Name Successfully Changed"
+        );
+    },
+    updateEmail: function (newEmail) {
+      return this.setValue("@editProfileEmailField", newEmail).click(
+        "@updateBtn"
+      );
+    },
+    updateBio: function (newBio) {
+      return this.setValue("@editProfileBioField", newBio)
+        .click("@updateBtn")
+        .waitForElementVisible("@mainNameTag", 4000)
+        .assert.textContains("@bioArea", newBio, "Bio Successfully Changed");
+    },
+    logout: function () {
+      return this.waitForElementVisible("@logoutBtn", 10000)
+        .click("@logoutBtn")
+        .waitForElementVisible("@yesLogout", 4000)
+        .click("@yesLogout");
     },
   },
 };

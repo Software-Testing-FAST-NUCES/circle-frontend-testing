@@ -5,9 +5,19 @@
 
   <testsuite name="editProfile.test"
     errors="0" failures="0" hostname="" id="" package="editProfile.test" skipped="0"
-    tests="1" time="9.267" timestamp="">
+    tests="1" time="5.605" timestamp="">
   
-    <testcase name="test for opening edit profile modal" classname="editProfile.test" time="9.267" assertions="2">
+    <testcase name="test for updating bio " classname="editProfile.test" time="5.605" assertions="7">
+
+    
+
+    
+
+    
+
+    
+
+    
 
     
 

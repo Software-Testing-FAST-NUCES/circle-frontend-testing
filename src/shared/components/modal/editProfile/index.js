@@ -104,7 +104,7 @@ function EditProfileModal({ openModal, HideModal, user }) {
             <Row>
               <Col>
                 <Form.Control
-                  placeholder="First name"
+                  placeholder="Firstname"
                   value={firstname}
                   onChange={(e) => setFirstname(e.target.value)}
                   className="text-font-family"
@@ -112,7 +112,7 @@ function EditProfileModal({ openModal, HideModal, user }) {
               </Col>
               <Col>
                 <Form.Control
-                  placeholder="Last name"
+                  placeholder="Lastname"
                   value={lastname}
                   onChange={(e) => setLastname(e.target.value)}
                   className="text-font-family"
