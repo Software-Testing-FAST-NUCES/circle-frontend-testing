@@ -1,6 +1,4 @@
 describe("Login", function () {
-  // test() and specify() is also available
-
   it("passes with valid credentials", function (browser) {
     var loginPage = browser.page.login();
 

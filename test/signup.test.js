@@ -1,53 +1,44 @@
 describe("Signup", function () {
-  // test() and specify() is also available
-
   it("passes with valid fields data", function (browser) {
-    var loginPage = browser.page.login();
+    var SignUpPage = browser.page.signup();
 
-    loginPage
-      .navigate()
+    SignUpPage.navigate()
       .waitForElementVisible("body", 6000)
-      // .assert.title("Google")
-      .click("@loginBtn")
-      .waitForElementVisible("@loginModal", 6000)
+      .click("@signUpBtn")
+      .waitForElementVisible("@signUpModal", 6000)
       .assert.visible("@email")
-      .setValue("@email", "haseeb@gmail.com")
+      .setValue("@email", "test1@gmail.com")
       .assert.visible("@password")
-      .setValue("@password", "haseeb1122")
-      .click("@loginSubmit")
+      .setValue("@password", "test1122")
+      .assert.visible("@firstname")
+      .setValue("@firstname", "Test")
+      .assert.visible("@lastname")
+      .setValue("@lastname", "1")
+      .assert.visible("@dob")
+      .setValue("@dob", "2022-05-25")
+      .click("@signUpSubmit")
       .pause(6000);
     browser.end();
   });
 
-  it("fails with inValid fields data", function (browser) {
-    var loginPage = browser.page.login();
+  it("fails with invalid fields data", function (browser) {
+    var SignUpPage = browser.page.signup();
 
-    loginPage
-      .navigate()
+    SignUpPage.navigate()
       .waitForElementVisible("body", 6000)
-      // .assert.title("Google")
-      .click("@loginBtn")
-      .waitForElementVisible("@loginModal", 6000)
+      .click("@signUpBtn")
+      .waitForElementVisible("@signUpModal", 6000)
       .assert.visible("@email")
-      .setValue("@email", "haseeb2@gmail.com")
+      .setValue("@email", "test1")
       .assert.visible("@password")
-      .setValue("@password", "haseeb1122")
-      .click("@loginSubmit")
-      .pause(6000);
-    browser.end();
-  });
-  it("fails with no fields data", function (browser) {
-    var loginPage = browser.page.login();
-
-    loginPage
-      .navigate()
-      .waitForElementVisible("body", 6000)
-      // .assert.title("Google")
-      .click("@loginBtn")
-      .waitForElementVisible("@loginModal", 6000)
-      .assert.visible("@email")
-      .assert.visible("@password")
-      .click("@loginSubmit")
+      .setValue("@password", "test1122")
+      .assert.visible("@firstname")
+      .setValue("@firstname", "Test")
+      .assert.visible("@lastname")
+      .setValue("@lastname", "1")
+      .assert.visible("@dob")
+      .setValue("@dob", "2022-05-25")
+      .click("@signUpSubmit")
       .pause(6000);
     browser.end();
   });

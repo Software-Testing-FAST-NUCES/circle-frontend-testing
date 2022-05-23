@@ -67,6 +67,7 @@ function SignupModal({ openModal, HideModal }) {
                   placeholder="First name"
                   onChange={(e) => setFirstname(e.target.value)}
                   className="text-font-family"
+                  id="firstname"
                 />
               </Col>
               <Col>
@@ -74,6 +75,7 @@ function SignupModal({ openModal, HideModal }) {
                   placeholder="Last name"
                   onChange={(e) => setLastname(e.target.value)}
                   className="text-font-family"
+                  id="lastname"
                 />
               </Col>
             </Row>
@@ -83,6 +85,7 @@ function SignupModal({ openModal, HideModal }) {
                   placeholder="Email"
                   onChange={(e) => setEmail(e.target.value)}
                   className="text-font-family"
+                  id="email"
                 />
               </Col>
               <Col>
@@ -90,6 +93,7 @@ function SignupModal({ openModal, HideModal }) {
                   placeholder="Password"
                   onChange={(e) => setPassword(e.target.value)}
                   className="text-font-family"
+                  id="password"
                 />
               </Col>
             </Row>
@@ -104,7 +108,11 @@ function SignupModal({ openModal, HideModal }) {
               </Col>
             </Row>
           </Form>
-          <button type="submit" className="signup-button mt-3">
+          <button
+            type="submit"
+            className="signup-button mt-3"
+            id="signup-sbmt-btn"
+          >
             {isSubmitting ? (
               <Spinner animation="grow" size="sm" />
             ) : (
