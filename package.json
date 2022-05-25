@@ -13,6 +13,8 @@
     "aos": "^3.0.0-beta.6",
     "axios": "^0.21.1",
     "bootstrap": "^4.6.0",
+    "jest": "^28.1.0",
+    "jest-dom": "^4.0.0",
     "moment": "^2.29.1",
     "nightwatch": "^2.1.7",
     "node-sass": "^6.0.1",
@@ -40,7 +42,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "nightwatch",
+    "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {

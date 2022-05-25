@@ -12,6 +12,15 @@ module.exports = {
       // very verbose geckodriver logs
       // '-vv'
     ],
+
+    // start_process: true,
+    //  server_path: 'C:/Users/aych/Desktop/ST/circle-frontend/node_modules/chromedriver/lib/chromedriver/chromedriver.exe',
+    //  port: 9515,
+    //  host: 'localhost',
+    //  ssl: false,
+    //  default_path_prefix: '',
+    //  proxy: undefined,
+    //  cli_args: []
   },
 
   test_settings: {

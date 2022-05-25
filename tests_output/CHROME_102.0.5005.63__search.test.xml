@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="1"
+            failures="0"
+            tests="5">
+
+  <testsuite name="search.test"
+    errors="1" failures="0" hostname="" id="" package="search.test" skipped="0"
+    tests="5" time="56.34" timestamp="">
+  
+    <testcase name="entered user exists" classname="search.test" time="13.25" assertions="6">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="entered user does not exist" classname="search.test" time="14.08" assertions="6">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="all users are displayed" classname="search.test" time="14.09" assertions="6">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="moves to user&#39;s profile" classname="search.test" time="14.81" assertions="6">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="moves to own profile" classname="search.test" time="0.1040" assertions="0">
+    <error message="An error occurred while creating a new ChromeDriver session: [Error] Server terminated early with status 1" type="error"><![CDATA[
+    Error: An error occurred while creating a new ChromeDriver session: [Error] Server terminated early with status 1
+    at C:\Users\aych\Desktop\ST\circle-frontend\node_modules\selenium-webdriver\remote\index.js:248:24
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    ]]></error>
+    
+    </testcase>
+  
+
+  
+    <system-err>
+        Error: An error occurred while creating a new ChromeDriver session: [Error] Server terminated early with status 1
+  Verify if ChromeDriver is configured correctly; using:
+  {
+     start_process: true,
+     server_path: &#39;C:\\Users\\aych\\Desktop\\ST\\circle-frontend\\node_modules\\chromedriver\\lib\\chromedriver\\chromedriver.exe&#39;,
+     port: 9515,
+     host: &#39;localhost&#39;,
+     ssl: false,
+     default_path_prefix: &#39;&#39;,
+     proxy: undefined,
+     cli_args: []
+  }
+
+ 
+  Set webdriver.log_path in your Nightwatch config to retrieve more logs from ChromeDriver.
+    </system-err>
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>
