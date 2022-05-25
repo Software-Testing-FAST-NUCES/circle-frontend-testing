@@ -16,9 +16,5 @@ module.exports = {
     loginSubmit: {
       selector: "button[id=login-sbmt-btn]",
     },
-    // submit: {
-    //   selector: '//[@name="q"]',
-    //   locateStrategy: "xpath",
-    // },
   },
 };

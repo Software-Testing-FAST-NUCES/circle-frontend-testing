@@ -5,9 +5,9 @@
 
   <testsuite name="login.test"
     errors="0" failures="0" hostname="" id="" package="login.test" skipped="0"
-    tests="3" time="51.67" timestamp="">
+    tests="3" time="58.07" timestamp="">
   
-    <testcase name="passes with valid credentials" classname="login.test" time="18.07" assertions="4">
+    <testcase name="passes with valid credentials" classname="login.test" time="19.21" assertions="4">
 
     
 
@@ -18,7 +18,7 @@
     
     </testcase>
   
-    <testcase name="fails with inValid credentials" classname="login.test" time="19.11" assertions="4">
+    <testcase name="fails with inValid credentials" classname="login.test" time="20.85" assertions="4">
 
     
 
@@ -29,7 +29,7 @@
     
     </testcase>
   
-    <testcase name="fails with no credentials" classname="login.test" time="14.50" assertions="4">
+    <testcase name="fails with no credentials" classname="login.test" time="18.00" assertions="4">
 
     
 
