@@ -141,6 +141,7 @@ function LoginModal({ openModal, HideModal }) {
             className="connect-login-btn"
             disabled={isSubmitting}
             onClick={handleSubmit}
+            id="login-sbmt-btn"
           >
             {isSubmitting ? (
               <Spinner animation="grow" size="sm" />

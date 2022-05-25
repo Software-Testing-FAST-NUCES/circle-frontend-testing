@@ -4,11 +4,17 @@ module.exports = {
     loginBtn: {
       selector: "a[id=login-btn]",
     },
-    signupBtn: {
-      selector: "a[id=signup-btn]",
-    },
     loginModal: {
       selector: "div[class=login-modal-body]",
+    },
+    email: {
+      selector: "input[type=email]",
+    },
+    password: {
+      selector: "input[type=password]",
+    },
+    loginSubmit: {
+      selector: "button[id=login-sbmt-btn]",
     },
     // submit: {
     //   selector: '//[@name="q"]',

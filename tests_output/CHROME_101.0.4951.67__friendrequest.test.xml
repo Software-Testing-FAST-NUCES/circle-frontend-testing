@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="1"
+            tests="1">
+
+  <testsuite name="friendrequest.test"
+    errors="0" failures="1" hostname="" id="" package="friendrequest.test" skipped="0"
+    tests="1" time="0.07400" timestamp="">
+  
+    <testcase name="Sending Friend Request Test Case" classname="friendrequest.test" time="0.07400" assertions="1">  <failure message="profilePage.navigate(...).validLogin(...).TestUserProfileModal is not a function">TypeError: profilePage.navigate(...).validLogin(...).TestUserProfileModal is not a function
+    at DescribeInstance.&lt;anonymous&gt; (D:\Fall 2022\ST\st\circle-frontend\test\friendrequest.test.js:8:10)</failure>
+
+    
+    </testcase>
+  
+
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>
