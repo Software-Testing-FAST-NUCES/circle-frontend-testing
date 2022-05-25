@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="5">
+
+  <testsuite name="search.test"
+    errors="0" failures="0" hostname="" id="" package="search.test" skipped="0"
+    tests="5" time="62.66" timestamp="">
+  
+    <testcase name="entered user exists" classname="search.test" time="11.51" assertions="6">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="entered user does not exist" classname="search.test" time="13.23" assertions="6">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="all users are displayed" classname="search.test" time="11.46" assertions="6">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="moves to user&#39;s profile" classname="search.test" time="13.28" assertions="6">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="moves to own profile" classname="search.test" time="13.18" assertions="6">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>
