@@ -1,44 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites errors="0"
             failures="0"
-            tests="3">
+            tests="0">
 
   <testsuite name="login.test"
     errors="0" failures="0" hostname="" id="" package="login.test" skipped="0"
-    tests="3" time="58.07" timestamp="">
-  
-    <testcase name="passes with valid credentials" classname="login.test" time="19.21" assertions="4">
-
-    
-
-    
-
-    
-
-    
-    </testcase>
-  
-    <testcase name="fails with inValid credentials" classname="login.test" time="20.85" assertions="4">
-
-    
-
-    
-
-    
-
-    
-    </testcase>
-  
-    <testcase name="fails with no credentials" classname="login.test" time="18.00" assertions="4">
-
-    
-
-    
-
-    
-
-    
-    </testcase>
+    tests="0" time="0.000" timestamp="">
   
 
   

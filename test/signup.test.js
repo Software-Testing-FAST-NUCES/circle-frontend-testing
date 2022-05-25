@@ -15,7 +15,7 @@ describe("Signup", function () {
       .assert.visible("@lastname")
       .setValue("@lastname", "1")
       .assert.visible("@dob")
-      .setValue("@dob", "2022-05-25")
+      .setValue("@dob", "25-05-2020")
       .click("@signUpSubmit")
       .pause(6000);
     browser.end();
@@ -29,7 +29,7 @@ describe("Signup", function () {
       .click("@signUpBtn")
       .waitForElementVisible("@signUpModal", 6000)
       .assert.visible("@email")
-      .setValue("@email", "test1")
+      .setValue("@email", "")
       .assert.visible("@password")
       .setValue("@password", "test1122")
       .assert.visible("@firstname")
@@ -37,7 +37,7 @@ describe("Signup", function () {
       .assert.visible("@lastname")
       .setValue("@lastname", "1")
       .assert.visible("@dob")
-      .setValue("@dob", "2022-05-25")
+      .setValue("@dob", "25-05-2020")
       .click("@signUpSubmit")
       .pause(6000);
     browser.end();
