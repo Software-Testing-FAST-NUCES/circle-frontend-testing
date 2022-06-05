@@ -69,3 +69,6 @@ describe("--> Unit testing for UI components", () => {
     // expect(inputEl).toHaveAttribute("type", "email");
   });
 });
+
+// UNIT FEEDBACK
+//shallow rendering vs rendering
