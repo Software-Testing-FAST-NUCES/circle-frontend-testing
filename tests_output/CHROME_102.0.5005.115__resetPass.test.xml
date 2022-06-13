@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="1"
+            failures="0"
+            tests="4">
+
+  <testsuite name="resetPass.test"
+    errors="1" failures="0" hostname="" id="" package="resetPass.test" skipped="1"
+    tests="4" time="58.31" timestamp="">
+  
+    <testcase name="enter valid email address" classname="resetPass.test" time="22.62" assertions="3">
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="enter invalid email address" classname="resetPass.test" time="15.12" assertions="3">
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="enter nothing and click next" classname="resetPass.test" time="20.44" assertions="3">
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="enter valid email and invalid otp" classname="resetPass.test" time="0.1290" assertions="0">
+    <error message="An error occurred while creating a new ChromeDriver session: [Error] Server terminated early with status 1" type="error"><![CDATA[
+    Error: An error occurred while creating a new ChromeDriver session: [Error] Server terminated early with status 1
+    at C:\Users\Ejaz\Desktop\ST-2\circle-frontend-testing\node_modules\selenium-webdriver\remote\index.js:248:24
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    ]]></error>
+    
+    </testcase>
+  
+
+  
+    <system-err>
+        Error: An error occurred while creating a new ChromeDriver session: [Error] Server terminated early with status 1
+  Verify if ChromeDriver is configured correctly; using:
+  {
+     start_process: true,
+     server_path: &#39;C:\\Users\\Ejaz\\Desktop\\ST-2\\circle-frontend-testing\\node_modules\\chromedriver\\lib\\chromedriver\\chromedriver.exe&#39;,
+     port: 9515,
+     host: &#39;localhost&#39;,
+     ssl: false,
+     default_path_prefix: &#39;&#39;,
+     proxy: undefined,
+     cli_args: []
+  }
+
+ 
+  Set webdriver.log_path in your Nightwatch config to retrieve more logs from ChromeDriver.
+    </system-err>
+  
+
+    
+
+  
+    
+    <testcase
+      name="enter valid email and valid otp" classname="resetPass.test">
+      <skipped />
+    </testcase>
+    
+  
+  </testsuite>
+</testsuites>
